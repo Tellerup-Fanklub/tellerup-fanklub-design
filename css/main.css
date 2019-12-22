@@ -183,3 +183,15 @@ img {
 #content .content_banner.club_event {
     border: 4px solid #73AD21;
 }
+
+#post_content {
+    border-radius: 25px;
+    background-color: #6A006A;
+    border: 4px solid #EAB711;
+    width: 100%;
+}
+
+#post_content .content_banner {
+    border-radius: 21px;
+    background-color: #F3F0E6;
+}
