@@ -18,7 +18,4 @@ export default {
 </script>
 
 <style lang="less">
-#app {
-    background-image: linear-gradient(#660066, #e600e6);
-}
 </style>
