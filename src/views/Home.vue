@@ -1,7 +1,5 @@
 <template>
-  <v-container>
-    <v-btn depressed color="primary">test btn</v-btn>
-  </v-container>
+  <v-btn depressed color="primary">test btn</v-btn>
 </template>
 
 <script>
