@@ -17,65 +17,11 @@
       </v-toolbar>
       <v-container>
         <v-row>
-          <v-col>
+          <v-col cols="10">
             <router-view />
           </v-col>
-          <v-col>
-
-            <v-card height="350px">
-                <v-navigation-drawer
-                  absolute
-                  permanent
-                  right
-                >
-                  <template v-slot:prepend>
-                    <v-list-item two-line>
-                      <v-list-item-avatar>
-                        <img src="https://randomuser.me/api/portraits/women/63.jpg">
-                      </v-list-item-avatar>
-
-                      <v-list-item-content>
-                        <v-list-item-title>Jane Smith</v-list-item-title>
-                        <v-list-item-subtitle>Logged In</v-list-item-subtitle>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </template>
-
-                  <v-divider></v-divider>
-
-                  <v-list dense>
-
-                    <v-list-item>
-                      <v-list-item-icon>
-                        <v-icon>mdi-home-city</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>Home</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-
-                    <v-list-item>
-                      <v-list-item-icon>
-                        <v-icon>mdi-account</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>Account</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-
-                    <v-list-item>
-                      <v-list-item-icon>
-                        <v-icon>mdi-account-group-outline</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>Users</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-
-                  </v-list>
-                </v-navigation-drawer>
-              </v-card>
-
+          <v-col cols="2">
+            <UserCard />
           </v-col>
         </v-row>
       </v-container>
@@ -83,14 +29,19 @@
   </v-app>
 </template>
 
-
 <script>
+import UserCard from "./components/UserCard";
+
 export default {
   name: "App",
 
   data: () => ({
     //
-  })
+  }),
+
+  components: {
+    UserCard
+  }
 };
 </script>
 
